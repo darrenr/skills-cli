@@ -162,6 +162,7 @@ func (f *GitHubFetcher) listSkillFiles(ctx context.Context, repo, ref, skillPath
 }
 
 func (f *GitHubFetcher) walkContents(ctx context.Context, repo, ref, rootSkillPath, currentPath string, files *[]string) error {
+	repo = strings.TrimPrefix(repo, "github/")
 	url := fmt.Sprintf("%s/repos/%s/contents/%s?ref=%s", strings.TrimSuffix(f.apiURL, "/"), repo, currentPath, ref)
 	req, err := http.NewRequestWithContext(ctx, http.MethodGet, url, nil)
 	if err != nil {
@@ -250,6 +251,7 @@ func (f *GitHubFetcher) rawURL(repo, ref, path string) string {
 	if base == "" {
 		base = rawBase
 	}
+	repo = strings.TrimPrefix(repo, "github/")
 	return fmt.Sprintf("%s/%s/%s/%s", base, repo, ref, strings.TrimPrefix(path, "/"))
 }
 
