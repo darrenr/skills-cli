@@ -73,11 +73,12 @@ Legend: ⬜ Not started · 🟡 In progress · ✅ Done · ❌ Blocked
 ## Phase 5: Registry Bootstrap
 
 - [x] `registry/embed.go` — `//go:embed skills.json`
-- [x] `registry/skills.json` — snapshot on 2026-03-14: 128 skills across 4 sources
+- [x] `registry/skills.json` — snapshot on 2026-03-14: 136 skills across 5 sources
   - 48 from `github/awesome-copilot`
   - 15 from `anthropics/skills`
   - 31 from `dotnet/skills` (MIT licensed)
   - 34 from `openai/skills` (`skills/.curated`, MIT licensed)
+  - 8 from `github/vuejs-ai/skills` (MIT licensed)
 - [x] `.gitignore` — excludes binary and coverage files
 - [x] `README.md` — comprehensive docs
 - [x] `.github/copilot-instructions.md` — project conventions for Copilot
@@ -115,6 +116,7 @@ Legend: ⬜ Not started · 🟡 In progress · ✅ Done · ❌ Blocked
 | 2026-03-14 | `registry/skills.json` not `registry/sources.json` | Name reflects content (skills, not sources) |
 | 2026-03-14 | Added `dotnet/skills` as third registry source | 31 high-quality MIT-licensed .NET skills from the official Microsoft team |
 | 2026-03-14 | Added `openai/skills` as fourth registry source | 34 curated OpenAI skills from `skills/.curated` (name collisions skipped) |
+| 2026-03-14 | Added `github/vuejs-ai/skills` as fifth registry source | 8 curated Vue-focused skills (composables, router, pinia, testing, options-api, JSX, debugging) |
 | 2026-03-14 | `cmd/sources.go` deferred to v2 | Single curated registry covers v1 needs; dynamic source management adds complexity |
 
 ## Notes

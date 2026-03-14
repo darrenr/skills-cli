@@ -58,7 +58,7 @@ allowed-tools: '...'      # Optional, experimental
 - **Auth**: No token required — public repos via raw GitHub URLs. Optional `GITHUB_TOKEN` for higher rate limits.
 - **Install targets**: All standard locations
 - **Registry**: Bundled JSON via `//go:embed` + remote updates cached at `~/.skills-cli/registry.json`
-- **Default sources**: `github/awesome-copilot`, `anthropics/skills` (user-configurable)
+- **Default sources**: `github/awesome-copilot`, `anthropics/skills`, `dotnet/skills`, `openai/skills`, `github/vuejs-ai/skills` (user-configurable)
 
 ## Implementation Phases
 

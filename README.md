@@ -114,8 +114,10 @@ The bundled registry (`registry/skills.json`) is embedded at compile time and co
 | [`anthropics/skills`](https://github.com/anthropics/skills) | Claude API, MCP builder, frontend, file formats, creative |
 | [`dotnet/skills`](https://github.com/dotnet/skills) | .NET diagnostics, MSBuild, upgrade migrations, EF Core |
 | [`openai/skills`](https://github.com/openai/skills) | Curated OpenAI-focused skills for docs, platform workflows, integrations, and tooling |
+| [`github/vuejs-ai/skills`](https://github.com/vuejs-ai/skills) | Vue-focused guidance: composables, router, pinia, testing, options-api, JSX, debugging |
 
 The exact number of bundled skills can change as the registry is refreshed.
+
 
 ### Adding A New Source
 
