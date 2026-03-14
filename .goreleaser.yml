@@ -1,0 +1,43 @@
+project: skills-cli
+before:
+  hooks:
+    - go mod tidy
+
+builds:
+  - id: skills-cli
+    binary: skills-cli
+    ldflags:
+      - -X github.com/darrenr/skills-cli/cmd.Version={{.Version}}
+      - -X github.com/darrenr/skills-cli/cmd.Commit={{.Commit}}
+      - -X github.com/darrenr/skills-cli/cmd.BuildDate={{.Date}}
+    goos:
+      - darwin
+      - linux
+      - windows
+    goarch:
+      - amd64
+      - arm64
+
+archives:
+  - id: skills-cli
+    name_template: "{{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+    format: tar.gz
+    format_overrides:
+      - goos: windows
+        format: zip
+
+checksum:
+  name_template: "{{ .ProjectName }}_{{ .Version }}_checksums.txt"
+
+changelog:
+  sort: asc
+  filters:
+    exclude:
+      - "^chore"
+      - "^docs"
+      - "^test"
+
+release:
+  github:
+    owner: darrenr
+    name: skills-cli

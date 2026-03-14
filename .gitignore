@@ -1,0 +1,14 @@
+# Build output
+skills-cli
+skills-cli.exe
+
+# Test coverage
+coverage.out
+coverage.html
+
+# macOS
+.DS_Store
+
+# Editor
+.idea/
+*.swp
