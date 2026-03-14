@@ -10,7 +10,7 @@ Agent Skills are the open standard ([agentskills.io](https://agentskills.io)) fo
 
 ## Features
 
-- **Bundled curated registry** — seeded from `github/awesome-copilot`, `anthropics/skills`, and `dotnet/skills`
+- **Bundled curated registry** — seeded from `github/awesome-copilot`, `anthropics/skills`, `dotnet/skills`, and `openai/skills`
 - **Browse and search** — filter by category, source, or free-text keyword
 - **Multi-target install** — project scope (`.github/skills/`, `.agents/skills/`, `.claude/skills/`) or personal global scope
 - **Track installed skills** — manifest at `~/.skills-cli/manifest.json`
@@ -106,15 +106,50 @@ Use `--target` with `install` to choose where the skill is written:
 
 ## Registry
 
-The bundled registry (`registry/skills.json`) is embedded at compile time and covers three curated sources:
+The bundled registry (`registry/skills.json`) is embedded at compile time and covers four curated sources:
 
 | Source | Focus |
 |---|---|
 | [`github/awesome-copilot`](https://github.com/github/awesome-copilot) | Git, GitHub, docs, languages, MCP, testing |
 | [`anthropics/skills`](https://github.com/anthropics/skills) | Claude API, MCP builder, frontend, file formats, creative |
 | [`dotnet/skills`](https://github.com/dotnet/skills) | .NET diagnostics, MSBuild, upgrade migrations, EF Core |
+| [`openai/skills`](https://github.com/openai/skills) | Curated OpenAI-focused skills for docs, platform workflows, integrations, and tooling |
 
 The exact number of bundled skills can change as the registry is refreshed.
+
+### Adding A New Source
+
+When adding a new source repo to `registry/skills.json`, use this checklist:
+
+1. Verify each candidate skill path has a real `SKILL.md`.
+2. Extract `name` + frontmatter `description` from upstream `SKILL.md`.
+3. Keep descriptions concise in the registry (max ~300 chars).
+4. Map every entry to an existing category slug in this project.
+5. Skip duplicate names (or rename only with explicit project decision).
+6. Ensure `source.repo`, `source.path`, and `source.ref` are all valid.
+7. Run tests and spot-check CLI output.
+
+Suggested validation flow:
+
+```bash
+# 1) Confirm path exists
+curl -sf "https://raw.githubusercontent.com/<owner>/<repo>/<ref>/<path>/SKILL.md" | head -5
+
+# 2) Verify registry JSON is valid
+jq empty registry/skills.json
+
+# 3) Check new source entries render correctly
+go run . list --source <owner/repo> | head -n 40
+
+# 4) Run test suite
+go test ./...
+```
+
+Notes:
+
+- Do not use placeholder descriptions for bulk imports.
+- Use bounded network calls (for example, `curl --max-time 20`) for large fetch loops.
+- Keep category assignments intentional so `list --category` remains useful.
 
 ### Categories
 
@@ -173,3 +208,4 @@ make build         # Build ./skills-cli with version ldflags
 - [github/awesome-copilot](https://github.com/github/awesome-copilot) — Curated Copilot skills and instructions
 - [anthropics/skills](https://github.com/anthropics/skills) — Official Anthropic Agent Skills
 - [dotnet/skills](https://github.com/dotnet/skills) — Official Microsoft .NET Agent Skills
+- [openai/skills](https://github.com/openai/skills) — Official OpenAI skills repository

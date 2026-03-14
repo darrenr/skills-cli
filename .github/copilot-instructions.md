@@ -4,7 +4,7 @@
 
 - **Module**: `github.com/darrenr/skills-cli`
 - **From**: initial scaffold (go.mod only, `main` branch)
-- **To**: full v1 CLI with registry, installer, and 94 bundled skills (`develop` branch)
+- **To**: full v1 CLI with registry, installer, and 128 bundled skills (`develop` branch)
 - **Migration type**: Greenfield Go CLI — built from scratch following established conventions
 - **Go version**: 1.26+
 
@@ -26,7 +26,7 @@ skills-cli/
 │   └── installer/            # manifest, install, update, remove logic
 └── registry/
     ├── embed.go              # //go:embed skills.json → var Skills []byte
-    └── skills.json           # bundled registry seed (94 skills, 3 sources)
+    └── skills.json           # bundled registry seed (128 skills, 4 sources)
 ```
 
 All business logic lives in `internal/`. The `cmd/` layer is thin: parse flags → call internal → print results.
@@ -189,6 +189,25 @@ curl -sf "https://raw.githubusercontent.com/<owner>/<repo>/<ref>/<path>/SKILL.md
 ```
 
 If the path returns 404, do **not** add the entry. `agent-customization` was removed because it was a VS Code built-in with no GitHub path.
+
+### Adding A New Registry Source (Bulk)
+
+When importing many entries from a new repo:
+
+1. Discover candidate skill directories from upstream.
+2. Validate each `.../SKILL.md` path before writing entries.
+3. Extract descriptions from frontmatter (`description:`), do not use placeholder text.
+4. Truncate descriptions to ~300 chars for registry readability.
+5. Skip duplicate `name` values already present in `registry/skills.json`.
+6. Map each skill into one of the existing category slugs.
+7. Validate JSON (`jq empty registry/skills.json`) before replacing file contents.
+8. Run `go test ./...` and spot-check `go run . list --source <repo>`.
+
+Required safety rules for bulk updates:
+
+- Use bounded-time network calls in loops (for example, `curl --max-time 20`) to avoid hanging sessions.
+- Never leave fallback placeholder descriptions in committed registry entries.
+- If a command partially truncates `registry/skills.json`, restore from git immediately before retrying.
 
 ---
 

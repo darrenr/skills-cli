@@ -19,7 +19,7 @@ Filter by category or source to narrow results.`,
 }
 
 func init() {
-	listCmd.Flags().String("category", "", "filter by category (e.g. git, golang, github)")
+	listCmd.Flags().String("category", "", "filter by category (e.g. git, mcp, github)")
 	listCmd.Flags().String("source", "", "filter by source repo (e.g. github/awesome-copilot)")
 	listCmd.Flags().Bool("installed", false, "show only installed skills")
 	rootCmd.AddCommand(listCmd)

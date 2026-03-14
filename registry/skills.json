@@ -6,433 +6,2182 @@
       "name": "conventional-commit",
       "description": "Prompt and workflow for generating conventional commit messages using a structured XML format. Guides users to create standardized, descriptive commit messages in line with the Conventional Commits specification.",
       "category": "git",
-      "tags": ["git", "commits", "conventional"],
+      "tags": [
+        "git",
+        "commits",
+        "conventional"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/conventional-commit", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/conventional-commit",
+        "ref": "main"
+      }
     },
     {
       "name": "git-commit",
       "description": "Write clear, descriptive and professional git commit messages following best practices.",
       "category": "git",
-      "tags": ["git", "commits"],
+      "tags": [
+        "git",
+        "commits"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/git-commit", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/git-commit",
+        "ref": "main"
+      }
     },
     {
       "name": "git-flow-branch-creator",
       "description": "Create git branches following git-flow conventions based on issue type and description.",
       "category": "git",
-      "tags": ["git", "branches", "git-flow"],
+      "tags": [
+        "git",
+        "branches",
+        "git-flow"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/git-flow-branch-creator", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/git-flow-branch-creator",
+        "ref": "main"
+      }
     },
     {
       "name": "gh-cli",
       "description": "GitHub CLI comprehensive reference for repositories, issues, pull requests, Actions, projects, releases, gists, codespaces, organizations, extensions, and all GitHub operations from the command line.",
       "category": "github",
-      "tags": ["github", "cli", "gh", "api"],
+      "tags": [
+        "github",
+        "cli",
+        "gh",
+        "api"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/gh-cli", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/gh-cli",
+        "ref": "main"
+      }
     },
     {
       "name": "github-issues",
       "description": "Create well-structured GitHub issues with proper labels, milestones, and descriptions.",
       "category": "github",
-      "tags": ["github", "issues", "project-management"],
+      "tags": [
+        "github",
+        "issues",
+        "project-management"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/github-issues", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/github-issues",
+        "ref": "main"
+      }
     },
     {
       "name": "create-github-action-workflow-specification",
       "description": "Design and specify GitHub Actions workflows for CI/CD pipelines.",
       "category": "github",
-      "tags": ["github", "actions", "ci-cd", "workflows"],
+      "tags": [
+        "github",
+        "actions",
+        "ci-cd",
+        "workflows"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/create-github-action-workflow-specification", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/create-github-action-workflow-specification",
+        "ref": "main"
+      }
     },
     {
       "name": "copilot-cli-quickstart",
       "description": "Quick-start guide and patterns for using GitHub Copilot in the CLI effectively.",
       "category": "github",
-      "tags": ["copilot", "cli", "quickstart"],
+      "tags": [
+        "copilot",
+        "cli",
+        "quickstart"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/copilot-cli-quickstart", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/copilot-cli-quickstart",
+        "ref": "main"
+      }
     },
     {
       "name": "make-skill-template",
       "description": "Create new Agent Skills for GitHub Copilot from prompts or by duplicating this template. Use when asked to create a skill, make a new skill, or scaffold a skill.",
       "category": "skills",
-      "tags": ["skills", "template", "copilot", "agent"],
+      "tags": [
+        "skills",
+        "template",
+        "copilot",
+        "agent"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/make-skill-template", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/make-skill-template",
+        "ref": "main"
+      }
     },
     {
       "name": "generate-custom-instructions-from-codebase",
       "description": "Analyze a codebase and generate tailored Copilot custom instructions based on its patterns and conventions.",
       "category": "skills",
-      "tags": ["copilot", "instructions", "customization", "codebase"],
+      "tags": [
+        "copilot",
+        "instructions",
+        "customization",
+        "codebase"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/generate-custom-instructions-from-codebase", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/generate-custom-instructions-from-codebase",
+        "ref": "main"
+      }
     },
     {
       "name": "memory-merger",
       "description": "Merge and deduplicate memory files to keep agent context organized and concise.",
       "category": "skills",
-      "tags": ["memory", "agent", "context"],
+      "tags": [
+        "memory",
+        "agent",
+        "context"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/memory-merger", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/memory-merger",
+        "ref": "main"
+      }
     },
     {
       "name": "go-mcp-server-generator",
       "description": "Generate a complete Go MCP server project with proper structure, dependencies, and implementation using the official MCP Go SDK.",
-      "category": "golang",
-      "tags": ["go", "mcp", "generator", "server"],
+      "category": "mcp",
+      "tags": [
+        "go",
+        "mcp",
+        "generator",
+        "server"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/go-mcp-server-generator", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/go-mcp-server-generator",
+        "ref": "main"
+      }
     },
     {
       "name": "csharp-mcp-server-generator",
       "description": "Generate a complete C# MCP server project with proper structure, dependencies, and implementation.",
       "category": "csharp",
-      "tags": ["csharp", "dotnet", "mcp", "generator", "server"],
+      "tags": [
+        "csharp",
+        "dotnet",
+        "mcp",
+        "generator",
+        "server"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/csharp-mcp-server-generator", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/csharp-mcp-server-generator",
+        "ref": "main"
+      }
     },
     {
       "name": "java-mcp-server-generator",
       "description": "Generate a complete Java MCP server project with proper structure, dependencies, and implementation.",
       "category": "java",
-      "tags": ["java", "mcp", "generator", "server"],
+      "tags": [
+        "java",
+        "mcp",
+        "generator",
+        "server"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/java-mcp-server-generator", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/java-mcp-server-generator",
+        "ref": "main"
+      }
     },
     {
       "name": "python-mcp-server-generator",
       "description": "Generate a complete Python MCP server project with proper structure, dependencies, and implementation.",
       "category": "python",
-      "tags": ["python", "mcp", "generator", "server"],
+      "tags": [
+        "python",
+        "mcp",
+        "generator",
+        "server"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/python-mcp-server-generator", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/python-mcp-server-generator",
+        "ref": "main"
+      }
     },
     {
       "name": "typescript-mcp-server-generator",
       "description": "Generate a complete TypeScript MCP server project with proper structure, dependencies, and implementation.",
       "category": "javascript",
-      "tags": ["typescript", "mcp", "generator", "server"],
+      "tags": [
+        "typescript",
+        "mcp",
+        "generator",
+        "server"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/typescript-mcp-server-generator", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/typescript-mcp-server-generator",
+        "ref": "main"
+      }
     },
     {
       "name": "rust-mcp-server-generator",
       "description": "Generate a complete Rust MCP server project with proper structure, dependencies, and implementation.",
       "category": "rust",
-      "tags": ["rust", "mcp", "generator", "server"],
+      "tags": [
+        "rust",
+        "mcp",
+        "generator",
+        "server"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/rust-mcp-server-generator", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/rust-mcp-server-generator",
+        "ref": "main"
+      }
     },
     {
       "name": "csharp-xunit",
       "description": "Write idiomatic C# unit tests using xUnit testing framework with best practices.",
       "category": "csharp",
-      "tags": ["csharp", "testing", "xunit"],
+      "tags": [
+        "csharp",
+        "testing",
+        "xunit"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/csharp-xunit", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/csharp-xunit",
+        "ref": "main"
+      }
     },
     {
       "name": "csharp-mstest",
       "description": "Write idiomatic C# unit tests using MSTest testing framework with best practices.",
       "category": "csharp",
-      "tags": ["csharp", "testing", "mstest"],
+      "tags": [
+        "csharp",
+        "testing",
+        "mstest"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/csharp-mstest", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/csharp-mstest",
+        "ref": "main"
+      }
     },
     {
       "name": "csharp-nunit",
       "description": "Write idiomatic C# unit tests using NUnit testing framework with best practices.",
       "category": "csharp",
-      "tags": ["csharp", "testing", "nunit"],
+      "tags": [
+        "csharp",
+        "testing",
+        "nunit"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/csharp-nunit", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/csharp-nunit",
+        "ref": "main"
+      }
     },
     {
       "name": "csharp-async",
       "description": "Write idiomatic async/await C# code following best practices and avoiding common pitfalls.",
       "category": "csharp",
-      "tags": ["csharp", "async", "dotnet"],
+      "tags": [
+        "csharp",
+        "async",
+        "dotnet"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/csharp-async", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/csharp-async",
+        "ref": "main"
+      }
     },
     {
       "name": "dotnet-best-practices",
       "description": "Apply .NET best practices and patterns to code including SOLID principles, async/await, and more.",
       "category": "csharp",
-      "tags": ["dotnet", "csharp", "best-practices"],
+      "tags": [
+        "dotnet",
+        "csharp",
+        "best-practices"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/dotnet-best-practices", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/dotnet-best-practices",
+        "ref": "main"
+      }
     },
     {
       "name": "java-junit",
       "description": "Write idiomatic Java unit tests using JUnit 5 with best practices and patterns.",
       "category": "java",
-      "tags": ["java", "testing", "junit"],
+      "tags": [
+        "java",
+        "testing",
+        "junit"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/java-junit", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/java-junit",
+        "ref": "main"
+      }
     },
     {
       "name": "java-springboot",
       "description": "Build Spring Boot applications following best practices and idiomatic patterns.",
       "category": "java",
-      "tags": ["java", "spring", "springboot"],
+      "tags": [
+        "java",
+        "spring",
+        "springboot"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/java-springboot", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/java-springboot",
+        "ref": "main"
+      }
     },
     {
       "name": "javascript-typescript-jest",
       "description": "Write idiomatic JavaScript/TypeScript unit tests using Jest with best practices.",
       "category": "javascript",
-      "tags": ["javascript", "typescript", "testing", "jest"],
+      "tags": [
+        "javascript",
+        "typescript",
+        "testing",
+        "jest"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/javascript-typescript-jest", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/javascript-typescript-jest",
+        "ref": "main"
+      }
     },
     {
       "name": "pytest-coverage",
       "description": "Write Python tests using pytest with coverage reporting and best practices.",
       "category": "python",
-      "tags": ["python", "testing", "pytest", "coverage"],
+      "tags": [
+        "python",
+        "testing",
+        "pytest",
+        "coverage"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/pytest-coverage", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/pytest-coverage",
+        "ref": "main"
+      }
     },
     {
       "name": "playwright-generate-test",
       "description": "Generate Playwright end-to-end tests for web applications with proper selectors and assertions.",
       "category": "testing",
-      "tags": ["playwright", "e2e", "testing", "automation"],
+      "tags": [
+        "playwright",
+        "e2e",
+        "testing",
+        "automation"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/playwright-generate-test", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/playwright-generate-test",
+        "ref": "main"
+      }
     },
     {
       "name": "playwright-automation-fill-in-form",
       "description": "Automate form filling in web applications using Playwright.",
       "category": "testing",
-      "tags": ["playwright", "automation", "forms", "testing"],
+      "tags": [
+        "playwright",
+        "automation",
+        "forms",
+        "testing"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/playwright-automation-fill-in-form", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/playwright-automation-fill-in-form",
+        "ref": "main"
+      }
     },
     {
       "name": "create-readme",
       "description": "Generate comprehensive README.md files for projects with proper sections and badges.",
       "category": "docs",
-      "tags": ["docs", "readme", "markdown"],
+      "tags": [
+        "docs",
+        "readme",
+        "markdown"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/create-readme", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/create-readme",
+        "ref": "main"
+      }
     },
     {
       "name": "documentation-writer",
       "description": "Write clear, comprehensive technical documentation for code, APIs, and projects.",
       "category": "docs",
-      "tags": ["docs", "documentation", "technical-writing"],
+      "tags": [
+        "docs",
+        "documentation",
+        "technical-writing"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/documentation-writer", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/documentation-writer",
+        "ref": "main"
+      }
     },
     {
       "name": "create-architectural-decision-record",
       "description": "Create Architecture Decision Records (ADRs) to document significant architectural decisions.",
       "category": "docs",
-      "tags": ["docs", "adr", "architecture", "decisions"],
+      "tags": [
+        "docs",
+        "adr",
+        "architecture",
+        "decisions"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/create-architectural-decision-record", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/create-architectural-decision-record",
+        "ref": "main"
+      }
     },
     {
       "name": "convert-plaintext-to-md",
       "description": "Convert plain text content into well-structured Markdown documents.",
       "category": "docs",
-      "tags": ["markdown", "conversion", "docs"],
+      "tags": [
+        "markdown",
+        "conversion",
+        "docs"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/convert-plaintext-to-md", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/convert-plaintext-to-md",
+        "ref": "main"
+      }
     },
     {
       "name": "create-specification",
       "description": "Create detailed technical specifications from requirements or user stories.",
       "category": "planning",
-      "tags": ["planning", "specs", "requirements"],
+      "tags": [
+        "planning",
+        "specs",
+        "requirements"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/create-specification", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/create-specification",
+        "ref": "main"
+      }
     },
     {
       "name": "create-implementation-plan",
       "description": "Generate a step-by-step implementation plan from a specification or feature description.",
       "category": "planning",
-      "tags": ["planning", "implementation", "tasks"],
+      "tags": [
+        "planning",
+        "implementation",
+        "tasks"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/create-implementation-plan", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/create-implementation-plan",
+        "ref": "main"
+      }
     },
     {
       "name": "prd",
       "description": "Create Product Requirements Documents (PRDs) from feature ideas or business requirements.",
       "category": "planning",
-      "tags": ["planning", "prd", "product", "requirements"],
+      "tags": [
+        "planning",
+        "prd",
+        "product",
+        "requirements"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/prd", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/prd",
+        "ref": "main"
+      }
     },
     {
       "name": "breakdown-epic-arch",
       "description": "Break down a large epic into architectural components and technical tasks.",
       "category": "planning",
-      "tags": ["planning", "epic", "architecture", "breakdown"],
+      "tags": [
+        "planning",
+        "epic",
+        "architecture",
+        "breakdown"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/breakdown-epic-arch", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/breakdown-epic-arch",
+        "ref": "main"
+      }
     },
     {
       "name": "architecture-blueprint-generator",
       "description": "Generate architecture blueprints and diagrams from requirements and system descriptions.",
       "category": "planning",
-      "tags": ["architecture", "blueprints", "design"],
+      "tags": [
+        "architecture",
+        "blueprints",
+        "design"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/architecture-blueprint-generator", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/architecture-blueprint-generator",
+        "ref": "main"
+      }
     },
     {
       "name": "refactor",
       "description": "Refactor code for improved readability, maintainability, and performance.",
       "category": "code-quality",
-      "tags": ["refactoring", "code-quality", "clean-code"],
+      "tags": [
+        "refactoring",
+        "code-quality",
+        "clean-code"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/refactor", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/refactor",
+        "ref": "main"
+      }
     },
     {
       "name": "review-and-refactor",
       "description": "Review code and suggest targeted refactoring improvements with explanations.",
       "category": "code-quality",
-      "tags": ["review", "refactoring", "code-quality"],
+      "tags": [
+        "review",
+        "refactoring",
+        "code-quality"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/review-and-refactor", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/review-and-refactor",
+        "ref": "main"
+      }
     },
     {
       "name": "doublecheck",
       "description": "Critically review and double-check AI-generated code or content for correctness and issues.",
       "category": "code-quality",
-      "tags": ["review", "verification", "correctness"],
+      "tags": [
+        "review",
+        "verification",
+        "correctness"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/doublecheck", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/doublecheck",
+        "ref": "main"
+      }
     },
     {
       "name": "add-educational-comments",
       "description": "Add clear, educational inline comments to code to explain complex logic and improve maintainability.",
       "category": "code-quality",
-      "tags": ["comments", "documentation", "teaching"],
+      "tags": [
+        "comments",
+        "documentation",
+        "teaching"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/add-educational-comments", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/add-educational-comments",
+        "ref": "main"
+      }
     },
     {
       "name": "sql-code-review",
       "description": "Review SQL queries for correctness, performance, and best practices.",
       "category": "database",
-      "tags": ["sql", "database", "review", "performance"],
+      "tags": [
+        "sql",
+        "database",
+        "review",
+        "performance"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/sql-code-review", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/sql-code-review",
+        "ref": "main"
+      }
     },
     {
       "name": "sql-optimization",
       "description": "Optimize SQL queries for better performance and efficiency.",
       "category": "database",
-      "tags": ["sql", "database", "optimization", "performance"],
+      "tags": [
+        "sql",
+        "database",
+        "optimization",
+        "performance"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/sql-optimization", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/sql-optimization",
+        "ref": "main"
+      }
     },
     {
       "name": "postgresql-code-review",
       "description": "Review PostgreSQL-specific code for correctness, performance, and idiomatic usage.",
       "category": "database",
-      "tags": ["postgresql", "database", "review"],
+      "tags": [
+        "postgresql",
+        "database",
+        "review"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/postgresql-code-review", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/postgresql-code-review",
+        "ref": "main"
+      }
     },
     {
       "name": "multi-stage-dockerfile",
       "description": "Create optimized multi-stage Dockerfiles for smaller, more secure container images.",
       "category": "docker",
-      "tags": ["docker", "containers", "dockerfile"],
+      "tags": [
+        "docker",
+        "containers",
+        "dockerfile"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/multi-stage-dockerfile", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/multi-stage-dockerfile",
+        "ref": "main"
+      }
     },
     {
       "name": "mcp-cli",
       "description": "Work with MCP servers from the command line — configure, test, and manage MCP servers.",
       "category": "mcp",
-      "tags": ["mcp", "cli", "servers"],
+      "tags": [
+        "mcp",
+        "cli",
+        "servers"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/mcp-cli", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/mcp-cli",
+        "ref": "main"
+      }
     },
     {
       "name": "mcp-configure",
       "description": "Configure MCP servers in VS Code, Claude Desktop, and other MCP clients.",
       "category": "mcp",
-      "tags": ["mcp", "configuration", "vscode"],
+      "tags": [
+        "mcp",
+        "configuration",
+        "vscode"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/mcp-configure", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/mcp-configure",
+        "ref": "main"
+      }
     },
     {
       "name": "ai-prompt-engineering-safety-review",
       "description": "Review AI prompts for safety, bias, and alignment issues before deployment.",
       "category": "ai",
-      "tags": ["ai", "prompts", "safety", "review"],
+      "tags": [
+        "ai",
+        "prompts",
+        "safety",
+        "review"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/ai-prompt-engineering-safety-review", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/ai-prompt-engineering-safety-review",
+        "ref": "main"
+      }
     },
     {
       "name": "boost-prompt",
       "description": "Enhance and improve AI prompts for better, more precise results.",
       "category": "ai",
-      "tags": ["ai", "prompts", "optimization"],
+      "tags": [
+        "ai",
+        "prompts",
+        "optimization"
+      ],
       "license": "MIT",
-      "source": { "repo": "github/awesome-copilot", "path": "skills/boost-prompt", "ref": "main" }
+      "source": {
+        "repo": "github/awesome-copilot",
+        "path": "skills/boost-prompt",
+        "ref": "main"
+      }
     },
-
-    { "name": "algorithmic-art", "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems.", "category": "creative", "tags": ["art", "creative", "p5js", "generative", "javascript"], "license": "", "source": { "repo": "anthropics/skills", "path": "skills/algorithmic-art", "ref": "main" } },
-    { "name": "canvas-design", "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. Use when the user asks to create a poster, piece of art, design, or other static piece.", "category": "creative", "tags": ["design", "art", "creative", "poster"], "license": "", "source": { "repo": "anthropics/skills", "path": "skills/canvas-design", "ref": "main" } },
-    { "name": "claude-api", "description": "Build apps with the Claude API or Anthropic SDK. TRIGGER when code imports anthropic or @anthropic-ai/sdk, or user asks to use Claude API, Anthropic SDKs, or Agent SDK.", "category": "ai", "tags": ["claude", "api", "anthropic", "sdk", "llm"], "license": "", "source": { "repo": "anthropics/skills", "path": "skills/claude-api", "ref": "main" } },
-    { "name": "doc-coauthoring", "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content.", "category": "docs", "tags": ["documentation", "writing", "workflow", "specs"], "license": "", "source": { "repo": "anthropics/skills", "path": "skills/doc-coauthoring", "ref": "main" } },
-    { "name": "docx", "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include any mention of 'Word doc', '.docx', or requests to produce professional documents with formatting.", "category": "docs", "tags": ["word", "docx", "documents", "office"], "license": "", "source": { "repo": "anthropics/skills", "path": "skills/docx", "ref": "main" } },
-    { "name": "frontend-design", "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use when the user asks to build web components, pages, artifacts, or applications including websites, landing pages, dashboards, or React components.", "category": "javascript", "tags": ["frontend", "ui", "react", "design", "html", "css"], "license": "", "source": { "repo": "anthropics/skills", "path": "skills/frontend-design", "ref": "main" } },
-    { "name": "mcp-builder", "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers in Python (FastMCP) or TypeScript.", "category": "mcp", "tags": ["mcp", "protocol", "servers", "tools", "python", "typescript"], "license": "", "source": { "repo": "anthropics/skills", "path": "skills/mcp-builder", "ref": "main" } },
-    { "name": "pdf", "description": "Use this skill whenever the user wants to do anything with PDF files, including reading or extracting text/tables, combining, splitting, rotating, adding watermarks, creating new PDFs, filling forms, encrypting, or OCR.", "category": "docs", "tags": ["pdf", "documents", "extract", "ocr"], "license": "", "source": { "repo": "anthropics/skills", "path": "skills/pdf", "ref": "main" } },
-    { "name": "pptx", "description": "Use this skill any time a .pptx file is involved — creating slide decks, pitch decks, or presentations; reading or extracting text; editing or updating existing presentations; combining or splitting slide files.", "category": "docs", "tags": ["powerpoint", "slides", "presentations", "pptx", "office"], "license": "", "source": { "repo": "anthropics/skills", "path": "skills/pptx", "ref": "main" } },
-    { "name": "skill-creator", "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit or optimize an existing skill, run evals, or benchmark skill performance.", "category": "skills", "tags": ["skills", "agent", "ai", "workflow", "evals"], "license": "", "source": { "repo": "anthropics/skills", "path": "skills/skill-creator", "ref": "main" } },
-    { "name": "slack-gif-creator", "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack.", "category": "creative", "tags": ["slack", "gif", "animation", "creative"], "license": "", "source": { "repo": "anthropics/skills", "path": "skills/slack-gif-creator", "ref": "main" } },
-    { "name": "theme-factory", "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reports, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact, or generate a new theme on-the-fly.", "category": "creative", "tags": ["design", "themes", "styling", "artifacts"], "license": "", "source": { "repo": "anthropics/skills", "path": "skills/theme-factory", "ref": "main" } },
-    { "name": "web-artifacts-builder", "description": "Suite of tools for creating elaborate, multi-component HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components.", "category": "javascript", "tags": ["react", "tailwind", "shadcn", "frontend", "artifacts"], "license": "", "source": { "repo": "anthropics/skills", "path": "skills/web-artifacts-builder", "ref": "main" } },
-    { "name": "webapp-testing", "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.", "category": "testing", "tags": ["playwright", "testing", "web", "frontend", "browser"], "license": "", "source": { "repo": "anthropics/skills", "path": "skills/webapp-testing", "ref": "main" } },
-    { "name": "xlsx", "description": "Use this skill any time a spreadsheet file is the primary input or output. Covers opening, reading, editing, or fixing .xlsx, .xlsm, .csv, or .tsv files; creating new spreadsheets; or converting between tabular file formats.", "category": "docs", "tags": ["excel", "spreadsheets", "xlsx", "csv", "office"], "license": "", "source": { "repo": "anthropics/skills", "path": "skills/xlsx", "ref": "main" } },
-
-    { "name": "technology-selection", "description": "Guides technology selection and implementation of AI and ML features in .NET 8+ applications using ML.NET, Microsoft.Extensions.AI, ONNX Runtime, and OllamaSharp. Covers classic ML through modern LLM orchestration, RAG pipelines, and agentic workflows.", "category": "dotnet", "tags": ["dotnet", "ai", "ml", "machine-learning", "llm"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-ai/skills/technology-selection", "ref": "main" } },
-    { "name": "optimizing-ef-core-queries", "description": "Optimize Entity Framework Core queries by fixing N+1 problems, choosing correct tracking modes, using compiled queries, and avoiding common performance traps. Use when EF Core queries are slow or generating excessive SQL.", "category": "dotnet", "tags": ["dotnet", "ef-core", "database", "performance", "csharp"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-data/skills/optimizing-ef-core-queries", "ref": "main" } },
-    { "name": "analyzing-dotnet-performance", "description": "Scans .NET code for ~50 performance anti-patterns across async, memory, strings, collections, LINQ, regex, serialization, and I/O with tiered severity classification. Use when analyzing .NET code for optimization opportunities.", "category": "dotnet", "tags": ["dotnet", "performance", "diagnostics", "csharp", "optimization"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-diag/skills/analyzing-dotnet-performance", "ref": "main" } },
-    { "name": "android-tombstone-symbolication", "description": "Symbolicate the .NET runtime frames in an Android tombstone file. Extracts BuildIds and PC offsets, downloads debug symbols from the Microsoft symbol server, and runs llvm-symbolizer to produce function names with source locations.", "category": "dotnet", "tags": ["dotnet", "android", "diagnostics", "maui", "debugging"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-diag/skills/android-tombstone-symbolication", "ref": "main" } },
-    { "name": "clr-activation-debugging", "description": "Diagnoses .NET Framework CLR activation issues using CLR activation logs. Use when the shim picks the wrong runtime, fails to load any runtime, or shows unexpected .NET Feature-on-Demand (FOD) dialogs.", "category": "dotnet", "tags": ["dotnet", "clr", "debugging", "diagnostics", "framework"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-diag/skills/clr-activation-debugging", "ref": "main" } },
-    { "name": "dotnet-trace-collect", "description": "Guide developers through capturing diagnostic artifacts to diagnose production .NET performance issues. Use when choosing diagnostic tools, collecting performance data, or understanding tool trade-offs across different environments.", "category": "dotnet", "tags": ["dotnet", "tracing", "diagnostics", "performance", "profiling"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-diag/skills/dotnet-trace-collect", "ref": "main" } },
-    { "name": "dump-collect", "description": "Configure and collect crash dumps for modern .NET applications. USE FOR: enabling automatic crash dumps for CoreCLR or NativeAOT, capturing dumps from running processes, setting up dump collection in Docker or Kubernetes.", "category": "dotnet", "tags": ["dotnet", "crash-dumps", "diagnostics", "debugging", "docker"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-diag/skills/dump-collect", "ref": "main" } },
-    { "name": "microbenchmarking", "description": "Activate when BenchmarkDotNet is involved — creating, running, configuring, or reviewing BDN benchmarks. Also activate when microbenchmarking .NET code would be useful and BenchmarkDotNet is the likely tool.", "category": "dotnet", "tags": ["dotnet", "benchmarking", "performance", "benchmarkdotnet", "csharp"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-diag/skills/microbenchmarking", "ref": "main" } },
-    { "name": "dotnet-maui-doctor", "description": "Diagnoses and fixes .NET MAUI development environment issues. Validates .NET SDK, workloads, Java JDK, Android SDK, Xcode, and Windows SDK. Use when setting up MAUI development or encountering build errors.", "category": "dotnet", "tags": ["dotnet", "maui", "mobile", "android", "ios"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-maui/skills/dotnet-maui-doctor", "ref": "main" } },
-    { "name": "binlog-failure-analysis", "description": "Skill for .NET/MSBuild *.binlog files and complicated build failures. Uses binary log replay to text logs for comprehensive build failure analysis. Only activate in MSBuild/.NET build context.", "category": "dotnet", "tags": ["dotnet", "msbuild", "build", "binlog", "debugging"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-msbuild/skills/binlog-failure-analysis", "ref": "main" } },
-    { "name": "binlog-generation", "description": "Pass /bl:{} to generate a unique binlog filename automatically on every .NET/MSBuild build for diagnostic purposes. Only activate in MSBuild/.NET build context.", "category": "dotnet", "tags": ["dotnet", "msbuild", "build", "binlog"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-msbuild/skills/binlog-generation", "ref": "main" } },
-    { "name": "build-parallelism", "description": "Guide for optimizing MSBuild build parallelism and multi-project scheduling. Use when builds are not utilizing all CPU cores or when evaluating graph build mode with /maxcpucount.", "category": "dotnet", "tags": ["dotnet", "msbuild", "build", "performance", "parallelism"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-msbuild/skills/build-parallelism", "ref": "main" } },
-    { "name": "build-perf-baseline", "description": "Establish build performance baselines and apply systematic optimization techniques including MSBuild Server, static graph builds, and artifacts output cache. Use when diagnosing slow builds.", "category": "dotnet", "tags": ["dotnet", "msbuild", "build", "performance", "optimization"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-msbuild/skills/build-perf-baseline", "ref": "main" } },
-    { "name": "build-perf-diagnostics", "description": "Reference knowledge for diagnosing MSBuild build performance issues. Use when builds are slow, to identify bottlenecks using binary log analysis covering timeline, node utilization, and expensive targets.", "category": "dotnet", "tags": ["dotnet", "msbuild", "build", "performance", "diagnostics"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-msbuild/skills/build-perf-diagnostics", "ref": "main" } },
-    { "name": "check-bin-obj-clash", "description": "Detects MSBuild projects with conflicting OutputPath or IntermediateOutputPath. Use when builds fail with file access errors, missing outputs, or intermittent failures from multiple projects writing to the same bin/obj directories.", "category": "dotnet", "tags": ["dotnet", "msbuild", "build", "debugging"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-msbuild/skills/check-bin-obj-clash", "ref": "main" } },
-    { "name": "directory-build-organization", "description": "Guide for organizing MSBuild infrastructure with Directory.Build.props, Directory.Build.targets, Directory.Packages.props, and Directory.Build.rsp. Use when structuring multi-project repos or implementing central package management.", "category": "dotnet", "tags": ["dotnet", "msbuild", "build", "organization", "packages"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-msbuild/skills/directory-build-organization", "ref": "main" } },
-    { "name": "eval-performance", "description": "Guide for diagnosing and improving MSBuild project evaluation performance. Use when builds are slow before any compilation starts, evaluation time is high in binlog analysis, or dealing with expensive glob patterns.", "category": "dotnet", "tags": ["dotnet", "msbuild", "build", "performance", "evaluation"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-msbuild/skills/eval-performance", "ref": "main" } },
-    { "name": "including-generated-files", "description": "Proper handling of files generated during the MSBuild build process. Use when generated files are not being included in compilation or when globs aren't capturing generated files correctly.", "category": "dotnet", "tags": ["dotnet", "msbuild", "build", "code-generation"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-msbuild/skills/including-generated-files", "ref": "main" } },
-    { "name": "incremental-build", "description": "Guide for optimizing MSBuild incremental builds. Use when builds are slower than expected on subsequent runs or when diagnosing why incremental builds are broken with Inputs/Outputs on targets.", "category": "dotnet", "tags": ["dotnet", "msbuild", "build", "incremental", "optimization"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-msbuild/skills/incremental-build", "ref": "main" } },
-    { "name": "msbuild-antipatterns", "description": "Catalog of MSBuild anti-patterns with detection rules and fix recipes. Use when reviewing, auditing, or cleaning up .csproj, .vbproj, .fsproj, .props, .targets, or .proj files.", "category": "dotnet", "tags": ["dotnet", "msbuild", "build", "code-quality", "antipatterns"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-msbuild/skills/msbuild-antipatterns", "ref": "main" } },
-    { "name": "msbuild-modernization", "description": "Guide for modernizing and migrating MSBuild project files to SDK-style format. Use when encountering legacy .csproj/.vbproj files with verbose XML, packages.config, or AssemblyInfo.cs patterns.", "category": "dotnet", "tags": ["dotnet", "msbuild", "migration", "sdk-style", "csharp"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-msbuild/skills/msbuild-modernization", "ref": "main" } },
-    { "name": "run-tests", "description": "Guide for running .NET tests with dotnet test. Use when the user needs to execute tests, detect the test platform (VSTest or Microsoft.Testing.Platform), apply test filters, or troubleshoot test execution across MSTest, xUnit, NUnit, and TUnit.", "category": "dotnet", "tags": ["dotnet", "testing", "xunit", "nunit", "mstest", "csharp"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-test/skills/run-tests", "ref": "main" } },
-    { "name": "dotnet-aot-compat", "description": "Make .NET projects compatible with Native AOT and trimming by systematically resolving IL trim/AOT analyzer warnings. USE FOR: AOT-compatible projects, fixing trimming warnings, resolving IL2026/IL2070/IL3050 warnings.", "category": "dotnet", "tags": ["dotnet", "aot", "trimming", "migration", "native"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-upgrade/skills/dotnet-aot-compat", "ref": "main" } },
-    { "name": "migrate-dotnet10-to-dotnet11", "description": "Migrate a .NET 10 project or solution to .NET 11 and resolve all breaking changes including upgrading TargetFramework from net10.0 to net11.0 and fixing build errors after updating the SDK.", "category": "dotnet", "tags": ["dotnet", "migration", "upgrade", "dotnet11"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-upgrade/skills/migrate-dotnet10-to-dotnet11", "ref": "main" } },
-    { "name": "migrate-dotnet8-to-dotnet9", "description": "Migrate a .NET 8 project to .NET 9 and resolve all breaking changes, including BinaryFormatter removal and changes in .NET 9 / C# 13 / ASP.NET Core 9 / EF Core 9.", "category": "dotnet", "tags": ["dotnet", "migration", "upgrade", "dotnet9"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-upgrade/skills/migrate-dotnet8-to-dotnet9", "ref": "main" } },
-    { "name": "migrate-dotnet9-to-dotnet10", "description": "Migrate a .NET 9 project or solution to .NET 10 and resolve all breaking changes in .NET 10 / C# 14 / ASP.NET Core 10 / EF Core 10.", "category": "dotnet", "tags": ["dotnet", "migration", "upgrade", "dotnet10"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-upgrade/skills/migrate-dotnet9-to-dotnet10", "ref": "main" } },
-    { "name": "migrate-nullable-references", "description": "Enable nullable reference types in a C# project and systematically resolve all warnings. USE FOR: adopting NRTs in existing codebases, file-by-file or project-wide migration, fixing CS8602/CS8618/CS86xx warnings.", "category": "dotnet", "tags": ["dotnet", "nullable", "csharp", "migration", "code-quality"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-upgrade/skills/migrate-nullable-references", "ref": "main" } },
-    { "name": "thread-abort-migration", "description": "Guides migration of .NET Framework Thread.Abort usage to cooperative cancellation in modern .NET. USE FOR: modernizing code that calls Thread.Abort, catching ThreadAbortException, or uses Thread.Interrupt for termination.", "category": "dotnet", "tags": ["dotnet", "threading", "migration", "csharp"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet-upgrade/skills/thread-abort-migration", "ref": "main" } },
-    { "name": "csharp-scripts", "description": "Run single-file C# programs as scripts for quick experimentation, prototyping, and concept testing. Use when the user wants to write and execute a small C# program without creating a full project.", "category": "dotnet", "tags": ["dotnet", "csharp", "scripting", "prototyping"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet/skills/csharp-scripts", "ref": "main" } },
-    { "name": "dotnet-pinvoke", "description": "Correctly call native (C/C++) libraries from .NET using P/Invoke and LibraryImport. Covers function signatures, string marshalling, memory lifetime, SafeHandle, and cross-platform patterns.", "category": "dotnet", "tags": ["dotnet", "pinvoke", "interop", "native", "csharp"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet/skills/dotnet-pinvoke", "ref": "main" } },
-    { "name": "nuget-trusted-publishing", "description": "Set up NuGet trusted publishing (OIDC) on a GitHub Actions repo — replaces long-lived API keys with short-lived tokens. USE FOR: trusted publishing, NuGet OIDC, keyless NuGet publish, secure NuGet CI/CD.", "category": "dotnet", "tags": ["dotnet", "nuget", "oidc", "github-actions", "security"], "license": "MIT", "source": { "repo": "dotnet/skills", "path": "plugins/dotnet/skills/nuget-trusted-publishing", "ref": "main" } }
+    {
+      "name": "algorithmic-art",
+      "description": "Creating algorithmic art using p5.js with seeded randomness and interactive parameter exploration. Use when users request creating art using code, generative art, algorithmic art, flow fields, or particle systems.",
+      "category": "creative",
+      "tags": [
+        "art",
+        "creative",
+        "p5js",
+        "generative",
+        "javascript"
+      ],
+      "license": "",
+      "source": {
+        "repo": "anthropics/skills",
+        "path": "skills/algorithmic-art",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "canvas-design",
+      "description": "Create beautiful visual art in .png and .pdf documents using design philosophy. Use when the user asks to create a poster, piece of art, design, or other static piece.",
+      "category": "creative",
+      "tags": [
+        "design",
+        "art",
+        "creative",
+        "poster"
+      ],
+      "license": "",
+      "source": {
+        "repo": "anthropics/skills",
+        "path": "skills/canvas-design",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "claude-api",
+      "description": "Build apps with the Claude API or Anthropic SDK. TRIGGER when code imports anthropic or @anthropic-ai/sdk, or user asks to use Claude API, Anthropic SDKs, or Agent SDK.",
+      "category": "ai",
+      "tags": [
+        "claude",
+        "api",
+        "anthropic",
+        "sdk",
+        "llm"
+      ],
+      "license": "",
+      "source": {
+        "repo": "anthropics/skills",
+        "path": "skills/claude-api",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "doc-coauthoring",
+      "description": "Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision docs, or similar structured content.",
+      "category": "docs",
+      "tags": [
+        "documentation",
+        "writing",
+        "workflow",
+        "specs"
+      ],
+      "license": "",
+      "source": {
+        "repo": "anthropics/skills",
+        "path": "skills/doc-coauthoring",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "docx",
+      "description": "Use this skill whenever the user wants to create, read, edit, or manipulate Word documents (.docx files). Triggers include any mention of 'Word doc', '.docx', or requests to produce professional documents with formatting.",
+      "category": "docs",
+      "tags": [
+        "word",
+        "docx",
+        "documents",
+        "office"
+      ],
+      "license": "",
+      "source": {
+        "repo": "anthropics/skills",
+        "path": "skills/docx",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "frontend-design",
+      "description": "Create distinctive, production-grade frontend interfaces with high design quality. Use when the user asks to build web components, pages, artifacts, or applications including websites, landing pages, dashboards, or React components.",
+      "category": "javascript",
+      "tags": [
+        "frontend",
+        "ui",
+        "react",
+        "design",
+        "html",
+        "css"
+      ],
+      "license": "",
+      "source": {
+        "repo": "anthropics/skills",
+        "path": "skills/frontend-design",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "mcp-builder",
+      "description": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers in Python (FastMCP) or TypeScript.",
+      "category": "mcp",
+      "tags": [
+        "mcp",
+        "protocol",
+        "servers",
+        "tools",
+        "python",
+        "typescript"
+      ],
+      "license": "",
+      "source": {
+        "repo": "anthropics/skills",
+        "path": "skills/mcp-builder",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "pdf",
+      "description": "Use this skill whenever the user wants to do anything with PDF files, including reading or extracting text/tables, combining, splitting, rotating, adding watermarks, creating new PDFs, filling forms, encrypting, or OCR.",
+      "category": "docs",
+      "tags": [
+        "pdf",
+        "documents",
+        "extract",
+        "ocr"
+      ],
+      "license": "",
+      "source": {
+        "repo": "anthropics/skills",
+        "path": "skills/pdf",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "pptx",
+      "description": "Use this skill any time a .pptx file is involved — creating slide decks, pitch decks, or presentations; reading or extracting text; editing or updating existing presentations; combining or splitting slide files.",
+      "category": "docs",
+      "tags": [
+        "powerpoint",
+        "slides",
+        "presentations",
+        "pptx",
+        "office"
+      ],
+      "license": "",
+      "source": {
+        "repo": "anthropics/skills",
+        "path": "skills/pptx",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "skill-creator",
+      "description": "Create new skills, modify and improve existing skills, and measure skill performance. Use when users want to create a skill from scratch, edit or optimize an existing skill, run evals, or benchmark skill performance.",
+      "category": "skills",
+      "tags": [
+        "skills",
+        "agent",
+        "ai",
+        "workflow",
+        "evals"
+      ],
+      "license": "",
+      "source": {
+        "repo": "anthropics/skills",
+        "path": "skills/skill-creator",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "slack-gif-creator",
+      "description": "Knowledge and utilities for creating animated GIFs optimized for Slack. Provides constraints, validation tools, and animation concepts. Use when users request animated GIFs for Slack.",
+      "category": "creative",
+      "tags": [
+        "slack",
+        "gif",
+        "animation",
+        "creative"
+      ],
+      "license": "",
+      "source": {
+        "repo": "anthropics/skills",
+        "path": "skills/slack-gif-creator",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "theme-factory",
+      "description": "Toolkit for styling artifacts with a theme. These artifacts can be slides, docs, reports, HTML landing pages, etc. There are 10 pre-set themes with colors/fonts that you can apply to any artifact, or generate a new theme on-the-fly.",
+      "category": "creative",
+      "tags": [
+        "design",
+        "themes",
+        "styling",
+        "artifacts"
+      ],
+      "license": "",
+      "source": {
+        "repo": "anthropics/skills",
+        "path": "skills/theme-factory",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "web-artifacts-builder",
+      "description": "Suite of tools for creating elaborate, multi-component HTML artifacts using modern frontend web technologies (React, Tailwind CSS, shadcn/ui). Use for complex artifacts requiring state management, routing, or shadcn/ui components.",
+      "category": "javascript",
+      "tags": [
+        "react",
+        "tailwind",
+        "shadcn",
+        "frontend",
+        "artifacts"
+      ],
+      "license": "",
+      "source": {
+        "repo": "anthropics/skills",
+        "path": "skills/web-artifacts-builder",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "webapp-testing",
+      "description": "Toolkit for interacting with and testing local web applications using Playwright. Supports verifying frontend functionality, debugging UI behavior, capturing browser screenshots, and viewing browser logs.",
+      "category": "testing",
+      "tags": [
+        "playwright",
+        "testing",
+        "web",
+        "frontend",
+        "browser"
+      ],
+      "license": "",
+      "source": {
+        "repo": "anthropics/skills",
+        "path": "skills/webapp-testing",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "xlsx",
+      "description": "Use this skill any time a spreadsheet file is the primary input or output. Covers opening, reading, editing, or fixing .xlsx, .xlsm, .csv, or .tsv files; creating new spreadsheets; or converting between tabular file formats.",
+      "category": "docs",
+      "tags": [
+        "excel",
+        "spreadsheets",
+        "xlsx",
+        "csv",
+        "office"
+      ],
+      "license": "",
+      "source": {
+        "repo": "anthropics/skills",
+        "path": "skills/xlsx",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "technology-selection",
+      "description": "Guides technology selection and implementation of AI and ML features in .NET 8+ applications using ML.NET, Microsoft.Extensions.AI, ONNX Runtime, and OllamaSharp. Covers classic ML through modern LLM orchestration, RAG pipelines, and agentic workflows.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "ai",
+        "ml",
+        "machine-learning",
+        "llm"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-ai/skills/technology-selection",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "optimizing-ef-core-queries",
+      "description": "Optimize Entity Framework Core queries by fixing N+1 problems, choosing correct tracking modes, using compiled queries, and avoiding common performance traps. Use when EF Core queries are slow or generating excessive SQL.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "ef-core",
+        "database",
+        "performance",
+        "csharp"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-data/skills/optimizing-ef-core-queries",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "analyzing-dotnet-performance",
+      "description": "Scans .NET code for ~50 performance anti-patterns across async, memory, strings, collections, LINQ, regex, serialization, and I/O with tiered severity classification. Use when analyzing .NET code for optimization opportunities.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "performance",
+        "diagnostics",
+        "csharp",
+        "optimization"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-diag/skills/analyzing-dotnet-performance",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "android-tombstone-symbolication",
+      "description": "Symbolicate the .NET runtime frames in an Android tombstone file. Extracts BuildIds and PC offsets, downloads debug symbols from the Microsoft symbol server, and runs llvm-symbolizer to produce function names with source locations.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "android",
+        "diagnostics",
+        "maui",
+        "debugging"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-diag/skills/android-tombstone-symbolication",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "clr-activation-debugging",
+      "description": "Diagnoses .NET Framework CLR activation issues using CLR activation logs. Use when the shim picks the wrong runtime, fails to load any runtime, or shows unexpected .NET Feature-on-Demand (FOD) dialogs.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "clr",
+        "debugging",
+        "diagnostics",
+        "framework"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-diag/skills/clr-activation-debugging",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "dotnet-trace-collect",
+      "description": "Guide developers through capturing diagnostic artifacts to diagnose production .NET performance issues. Use when choosing diagnostic tools, collecting performance data, or understanding tool trade-offs across different environments.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "tracing",
+        "diagnostics",
+        "performance",
+        "profiling"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-diag/skills/dotnet-trace-collect",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "dump-collect",
+      "description": "Configure and collect crash dumps for modern .NET applications. USE FOR: enabling automatic crash dumps for CoreCLR or NativeAOT, capturing dumps from running processes, setting up dump collection in Docker or Kubernetes.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "crash-dumps",
+        "diagnostics",
+        "debugging",
+        "docker"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-diag/skills/dump-collect",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "microbenchmarking",
+      "description": "Activate when BenchmarkDotNet is involved — creating, running, configuring, or reviewing BDN benchmarks. Also activate when microbenchmarking .NET code would be useful and BenchmarkDotNet is the likely tool.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "benchmarking",
+        "performance",
+        "benchmarkdotnet",
+        "csharp"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-diag/skills/microbenchmarking",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "dotnet-maui-doctor",
+      "description": "Diagnoses and fixes .NET MAUI development environment issues. Validates .NET SDK, workloads, Java JDK, Android SDK, Xcode, and Windows SDK. Use when setting up MAUI development or encountering build errors.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "maui",
+        "mobile",
+        "android",
+        "ios"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-maui/skills/dotnet-maui-doctor",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "binlog-failure-analysis",
+      "description": "Skill for .NET/MSBuild *.binlog files and complicated build failures. Uses binary log replay to text logs for comprehensive build failure analysis. Only activate in MSBuild/.NET build context.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "msbuild",
+        "build",
+        "binlog",
+        "debugging"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-msbuild/skills/binlog-failure-analysis",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "binlog-generation",
+      "description": "Pass /bl:{} to generate a unique binlog filename automatically on every .NET/MSBuild build for diagnostic purposes. Only activate in MSBuild/.NET build context.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "msbuild",
+        "build",
+        "binlog"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-msbuild/skills/binlog-generation",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "build-parallelism",
+      "description": "Guide for optimizing MSBuild build parallelism and multi-project scheduling. Use when builds are not utilizing all CPU cores or when evaluating graph build mode with /maxcpucount.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "msbuild",
+        "build",
+        "performance",
+        "parallelism"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-msbuild/skills/build-parallelism",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "build-perf-baseline",
+      "description": "Establish build performance baselines and apply systematic optimization techniques including MSBuild Server, static graph builds, and artifacts output cache. Use when diagnosing slow builds.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "msbuild",
+        "build",
+        "performance",
+        "optimization"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-msbuild/skills/build-perf-baseline",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "build-perf-diagnostics",
+      "description": "Reference knowledge for diagnosing MSBuild build performance issues. Use when builds are slow, to identify bottlenecks using binary log analysis covering timeline, node utilization, and expensive targets.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "msbuild",
+        "build",
+        "performance",
+        "diagnostics"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-msbuild/skills/build-perf-diagnostics",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "check-bin-obj-clash",
+      "description": "Detects MSBuild projects with conflicting OutputPath or IntermediateOutputPath. Use when builds fail with file access errors, missing outputs, or intermittent failures from multiple projects writing to the same bin/obj directories.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "msbuild",
+        "build",
+        "debugging"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-msbuild/skills/check-bin-obj-clash",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "directory-build-organization",
+      "description": "Guide for organizing MSBuild infrastructure with Directory.Build.props, Directory.Build.targets, Directory.Packages.props, and Directory.Build.rsp. Use when structuring multi-project repos or implementing central package management.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "msbuild",
+        "build",
+        "organization",
+        "packages"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-msbuild/skills/directory-build-organization",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "eval-performance",
+      "description": "Guide for diagnosing and improving MSBuild project evaluation performance. Use when builds are slow before any compilation starts, evaluation time is high in binlog analysis, or dealing with expensive glob patterns.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "msbuild",
+        "build",
+        "performance",
+        "evaluation"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-msbuild/skills/eval-performance",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "including-generated-files",
+      "description": "Proper handling of files generated during the MSBuild build process. Use when generated files are not being included in compilation or when globs aren't capturing generated files correctly.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "msbuild",
+        "build",
+        "code-generation"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-msbuild/skills/including-generated-files",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "incremental-build",
+      "description": "Guide for optimizing MSBuild incremental builds. Use when builds are slower than expected on subsequent runs or when diagnosing why incremental builds are broken with Inputs/Outputs on targets.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "msbuild",
+        "build",
+        "incremental",
+        "optimization"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-msbuild/skills/incremental-build",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "msbuild-antipatterns",
+      "description": "Catalog of MSBuild anti-patterns with detection rules and fix recipes. Use when reviewing, auditing, or cleaning up .csproj, .vbproj, .fsproj, .props, .targets, or .proj files.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "msbuild",
+        "build",
+        "code-quality",
+        "antipatterns"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-msbuild/skills/msbuild-antipatterns",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "msbuild-modernization",
+      "description": "Guide for modernizing and migrating MSBuild project files to SDK-style format. Use when encountering legacy .csproj/.vbproj files with verbose XML, packages.config, or AssemblyInfo.cs patterns.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "msbuild",
+        "migration",
+        "sdk-style",
+        "csharp"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-msbuild/skills/msbuild-modernization",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "run-tests",
+      "description": "Guide for running .NET tests with dotnet test. Use when the user needs to execute tests, detect the test platform (VSTest or Microsoft.Testing.Platform), apply test filters, or troubleshoot test execution across MSTest, xUnit, NUnit, and TUnit.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "testing",
+        "xunit",
+        "nunit",
+        "mstest",
+        "csharp"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-test/skills/run-tests",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "dotnet-aot-compat",
+      "description": "Make .NET projects compatible with Native AOT and trimming by systematically resolving IL trim/AOT analyzer warnings. USE FOR: AOT-compatible projects, fixing trimming warnings, resolving IL2026/IL2070/IL3050 warnings.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "aot",
+        "trimming",
+        "migration",
+        "native"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-upgrade/skills/dotnet-aot-compat",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "migrate-dotnet10-to-dotnet11",
+      "description": "Migrate a .NET 10 project or solution to .NET 11 and resolve all breaking changes including upgrading TargetFramework from net10.0 to net11.0 and fixing build errors after updating the SDK.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "migration",
+        "upgrade",
+        "dotnet11"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-upgrade/skills/migrate-dotnet10-to-dotnet11",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "migrate-dotnet8-to-dotnet9",
+      "description": "Migrate a .NET 8 project to .NET 9 and resolve all breaking changes, including BinaryFormatter removal and changes in .NET 9 / C# 13 / ASP.NET Core 9 / EF Core 9.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "migration",
+        "upgrade",
+        "dotnet9"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-upgrade/skills/migrate-dotnet8-to-dotnet9",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "migrate-dotnet9-to-dotnet10",
+      "description": "Migrate a .NET 9 project or solution to .NET 10 and resolve all breaking changes in .NET 10 / C# 14 / ASP.NET Core 10 / EF Core 10.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "migration",
+        "upgrade",
+        "dotnet10"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-upgrade/skills/migrate-dotnet9-to-dotnet10",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "migrate-nullable-references",
+      "description": "Enable nullable reference types in a C# project and systematically resolve all warnings. USE FOR: adopting NRTs in existing codebases, file-by-file or project-wide migration, fixing CS8602/CS8618/CS86xx warnings.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "nullable",
+        "csharp",
+        "migration",
+        "code-quality"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-upgrade/skills/migrate-nullable-references",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "thread-abort-migration",
+      "description": "Guides migration of .NET Framework Thread.Abort usage to cooperative cancellation in modern .NET. USE FOR: modernizing code that calls Thread.Abort, catching ThreadAbortException, or uses Thread.Interrupt for termination.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "threading",
+        "migration",
+        "csharp"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet-upgrade/skills/thread-abort-migration",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "csharp-scripts",
+      "description": "Run single-file C# programs as scripts for quick experimentation, prototyping, and concept testing. Use when the user wants to write and execute a small C# program without creating a full project.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "csharp",
+        "scripting",
+        "prototyping"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet/skills/csharp-scripts",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "dotnet-pinvoke",
+      "description": "Correctly call native (C/C++) libraries from .NET using P/Invoke and LibraryImport. Covers function signatures, string marshalling, memory lifetime, SafeHandle, and cross-platform patterns.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "pinvoke",
+        "interop",
+        "native",
+        "csharp"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet/skills/dotnet-pinvoke",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "nuget-trusted-publishing",
+      "description": "Set up NuGet trusted publishing (OIDC) on a GitHub Actions repo — replaces long-lived API keys with short-lived tokens. USE FOR: trusted publishing, NuGet OIDC, keyless NuGet publish, secure NuGet CI/CD.",
+      "category": "dotnet",
+      "tags": [
+        "dotnet",
+        "nuget",
+        "oidc",
+        "github-actions",
+        "security"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "dotnet/skills",
+        "path": "plugins/dotnet/skills/nuget-trusted-publishing",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "aspnet-core",
+      "description": "Build, review, refactor, or architect ASP.NET Core web applications using current official guidance for .NET web development. Use when working on Blazor Web Apps, Razor Pages, MVC, Minimal APIs, controller-based Web APIs, SignalR, gRPC, middleware, dependency injection, configuration, authentication, authorization, testing, performance, deployment, or ASP.NET Core upgrades.",
+      "category": "dotnet",
+      "tags": [
+        "aspnet",
+        "core",
+        "curated",
+        "openai"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/aspnet-core",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "chatgpt-apps",
+      "description": "Build, scaffold, refactor, and troubleshoot ChatGPT Apps SDK applications that combine an MCP server and widget UI. Use when Codex needs to design tools, register UI resources, wire the MCP Apps bridge or ChatGPT compatibility APIs, apply Apps SDK metadata or CSP or domain settings, or produce a docs-aligned project scaffold. Prefer a docs-first workflow by invoking the openai-docs skill or OpenAI developer docs MCP tools before generating code.",
+      "category": "ai",
+      "tags": [
+        "apps",
+        "chatgpt",
+        "curated",
+        "openai"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/chatgpt-apps",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "cloudflare-deploy",
+      "description": "Deploy applications and infrastructure to Cloudflare using Workers, Pages, and related platform services. Use when the user asks to deploy, host, publish, or set up a project on Cloudflare.",
+      "category": "docker",
+      "tags": [
+        "cloudflare",
+        "curated",
+        "deploy",
+        "openai"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/cloudflare-deploy",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "develop-web-game",
+      "description": "Use when Codex is building or iterating on a web game (HTML/JS) and needs a reliable development + testing loop: implement small changes, run a Playwright-based test script with short input bursts and intentional pauses, inspect screenshots/text, and review console errors with render_game_to_text.",
+      "category": "creative",
+      "tags": [
+        "curated",
+        "develop",
+        "game",
+        "openai",
+        "web"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/develop-web-game",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "doc",
+      "description": "Use when the task involves reading, creating, or editing `.docx` documents, especially when formatting or layout fidelity matters; prefer `python-docx` plus the bundled `scripts/render_docx.py` for visual checks.",
+      "category": "docs",
+      "tags": [
+        "curated",
+        "doc",
+        "openai"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/doc",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "figma-implement-design",
+      "description": "Translate Figma nodes into production-ready code with 1:1 visual fidelity using the Figma MCP workflow (design context, screenshots, assets, and project-convention translation). Trigger when the user provides Figma URLs or node IDs, or asks to implement designs or components that must match Figma specs. Requires a working Figma MCP server connection.",
+      "category": "creative",
+      "tags": [
+        "curated",
+        "design",
+        "figma",
+        "implement",
+        "openai"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/figma-implement-design",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "figma",
+      "description": "Use the Figma MCP server to fetch design context, screenshots, variables, and assets from Figma, and to translate Figma nodes into production code. Trigger when a task involves Figma URLs, node IDs, design-to-code implementation, or Figma MCP setup and troubleshooting.",
+      "category": "creative",
+      "tags": [
+        "curated",
+        "figma",
+        "openai"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/figma",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "gh-address-comments",
+      "description": "Help address review/issue comments on the open GitHub PR for the current branch using gh CLI; verify gh auth first and prompt the user to authenticate if not logged in.",
+      "category": "github",
+      "tags": [
+        "address",
+        "comments",
+        "curated",
+        "gh",
+        "openai"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/gh-address-comments",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "gh-fix-ci",
+      "description": "Use when a user asks to debug or fix failing GitHub PR checks that run in GitHub Actions; use `gh` to inspect checks and logs, summarize failure context, draft a fix plan, and implement only after explicit approval. Treat external providers (for example Buildkite) as out of scope and report only the details URL.",
+      "category": "github",
+      "tags": [
+        "ci",
+        "curated",
+        "fix",
+        "gh",
+        "openai"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/gh-fix-ci",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "imagegen",
+      "description": "Use when the user asks to generate or edit images via the OpenAI Image API (for example: generate image, edit/inpaint/mask, background removal or replacement, transparent background, product shots, concept art, covers, or batch variants); run the bundled CLI (`scripts/image_gen.py`) and require `OPENAI_API_KEY` for live calls.",
+      "category": "creative",
+      "tags": [
+        "curated",
+        "imagegen",
+        "openai"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/imagegen",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "jupyter-notebook",
+      "description": "Use when the user asks to create, scaffold, or edit Jupyter notebooks (`.ipynb`) for experiments, explorations, or tutorials; prefer the bundled templates and run the helper script `new_notebook.py` to generate a clean starting notebook.",
+      "category": "docs",
+      "tags": [
+        "curated",
+        "jupyter",
+        "notebook",
+        "openai"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/jupyter-notebook",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "linear",
+      "description": "Manage issues, projects & team workflows in Linear. Use when the user wants to read, create or updates tickets in Linear.",
+      "category": "planning",
+      "tags": [
+        "curated",
+        "linear",
+        "openai"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/linear",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "netlify-deploy",
+      "description": "Deploy web projects to Netlify using the Netlify CLI (`npx netlify`). Use when the user asks to deploy, host, publish, or link a site/repo on Netlify, including preview and production deploys.",
+      "category": "docker",
+      "tags": [
+        "curated",
+        "deploy",
+        "netlify",
+        "openai"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/netlify-deploy",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "notion-knowledge-capture",
+      "description": "Capture conversations and decisions into structured Notion pages; use when turning chats/notes into wiki entries, how-tos, decisions, or FAQs with proper linking.",
+      "category": "planning",
+      "tags": [
+        "capture",
+        "curated",
+        "knowledge",
+        "notion",
+        "openai"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/notion-knowledge-capture",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "notion-meeting-intelligence",
+      "description": "Prepare meeting materials with Notion context and Codex research; use when gathering context, drafting agendas/pre-reads, and tailoring materials to attendees.",
+      "category": "planning",
+      "tags": [
+        "curated",
+        "intelligence",
+        "meeting",
+        "notion",
+        "openai"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/notion-meeting-intelligence",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "notion-research-documentation",
+      "description": "Research across Notion and synthesize into structured documentation; use when gathering info from multiple Notion sources to produce briefs, comparisons, or reports with citations.",
+      "category": "planning",
+      "tags": [
+        "curated",
+        "documentation",
+        "notion",
+        "openai",
+        "research"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/notion-research-documentation",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "notion-spec-to-implementation",
+      "description": "Turn Notion specs into implementation plans, tasks, and progress tracking; use when implementing PRDs/feature specs and creating Notion plans + tasks from them.",
+      "category": "planning",
+      "tags": [
+        "curated",
+        "implementation",
+        "notion",
+        "openai",
+        "spec",
+        "to"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/notion-spec-to-implementation",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "openai-docs",
+      "description": "Use when the user asks how to build with OpenAI products or APIs and needs up-to-date official documentation with citations, help choosing the latest model for a use case, or explicit GPT-5.4 upgrade and prompt-upgrade guidance; prioritize OpenAI docs MCP tools, use bundled references only as helper context, and restrict any fallback browsing to official OpenAI domains.",
+      "category": "docs",
+      "tags": [
+        "curated",
+        "docs",
+        "openai"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/openai-docs",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "playwright-interactive",
+      "description": "Persistent browser and Electron interaction through `js_repl` for fast iterative UI debugging.",
+      "category": "testing",
+      "tags": [
+        "curated",
+        "interactive",
+        "openai",
+        "playwright"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/playwright-interactive",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "playwright",
+      "description": "Use when the task requires automating a real browser from the terminal (navigation, form filling, snapshots, screenshots, data extraction, UI-flow debugging) via `playwright-cli` or the bundled wrapper script.",
+      "category": "testing",
+      "tags": [
+        "curated",
+        "openai",
+        "playwright"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/playwright",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "render-deploy",
+      "description": "Deploy applications to Render by analyzing codebases, generating render.yaml Blueprints, and providing Dashboard deeplinks. Use when the user wants to deploy, host, publish, or set up their application on Render's cloud platform.",
+      "category": "docker",
+      "tags": [
+        "curated",
+        "deploy",
+        "openai",
+        "render"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/render-deploy",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "screenshot",
+      "description": "Use when the user explicitly asks for a desktop or system screenshot (full screen, specific app or window, or a pixel region), or when tool-specific capture capabilities are unavailable and an OS-level capture is needed.",
+      "category": "testing",
+      "tags": [
+        "curated",
+        "openai",
+        "screenshot"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/screenshot",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "security-best-practices",
+      "description": "Perform language and framework specific security best-practice reviews and suggest improvements. Trigger only when the user explicitly requests security best practices guidance, a security review/report, or secure-by-default coding help. Trigger only for supported languages (python, javascript/typescript, go). Do not trigger for general code review, debugging, or non-security tasks.",
+      "category": "code-quality",
+      "tags": [
+        "best",
+        "curated",
+        "openai",
+        "practices",
+        "security"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/security-best-practices",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "security-ownership-map",
+      "description": "Analyze git repositories to build a security ownership topology (people-to-file), compute bus factor and sensitive-code ownership, and export CSV/JSON for graph databases and visualization. Trigger only when the user explicitly wants a security-oriented ownership or bus-factor analysis grounded in git history (for example: orphaned sensitive code, security maintainers, CODEOWNERS reality checks for risk, sensitive hotspots, or ownership clusters). Do not trigger for general maintainer lists or non-security ownership questions.",
+      "category": "code-quality",
+      "tags": [
+        "curated",
+        "map",
+        "openai",
+        "ownership",
+        "security"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/security-ownership-map",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "security-threat-model",
+      "description": "Repository-grounded threat modeling that enumerates trust boundaries, assets, attacker capabilities, abuse paths, and mitigations, and writes a concise Markdown threat model. Trigger only when the user explicitly asks to threat model a codebase or path, enumerate threats/abuse paths, or perform AppSec threat modeling. Do not trigger for general architecture summaries, code review, or non-security design work.",
+      "category": "code-quality",
+      "tags": [
+        "curated",
+        "model",
+        "openai",
+        "security",
+        "threat"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/security-threat-model",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "sentry",
+      "description": "Use when the user asks to inspect Sentry issues or events, summarize recent production errors, or pull basic Sentry health data via the Sentry API; perform read-only queries with the bundled script and require `SENTRY_AUTH_TOKEN`.",
+      "category": "code-quality",
+      "tags": [
+        "curated",
+        "openai",
+        "sentry"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/sentry",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "slides",
+      "description": "Create and edit presentation slide decks (`.pptx`) with PptxGenJS, bundled layout helpers, and render/validation utilities. Use when tasks involve building a new PowerPoint deck, recreating slides from screenshots/PDFs/reference decks, modifying slide content while preserving editable output, adding charts/diagrams/visuals, or diagnosing layout issues such as overflow, overlaps, and font substitution.",
+      "category": "docs",
+      "tags": [
+        "curated",
+        "openai",
+        "slides"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/slides",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "sora",
+      "description": "Use when the user asks to generate, remix, poll, list, download, or delete Sora videos via OpenAI\\u2019s video API using the bundled CLI (`scripts/sora.py`), including requests like \\u201cgenerate AI video,\\u201d \\u201cSora,\\u201d \\u201cvideo remix,\\u201d \\u201cdownload video/thumbnail/spritesheet,\\u201d and batch video generation; requires `OPENAI_API_KEY` and Sora API access.",
+      "category": "creative",
+      "tags": [
+        "curated",
+        "openai",
+        "sora"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/sora",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "speech",
+      "description": "Use when the user asks for text-to-speech narration or voiceover, accessibility reads, audio prompts, or batch speech generation via the OpenAI Audio API; run the bundled CLI (`scripts/text_to_speech.py`) with built-in voices and require `OPENAI_API_KEY` for live calls. Custom voice creation is out of scope.",
+      "category": "ai",
+      "tags": [
+        "curated",
+        "openai",
+        "speech"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/speech",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "spreadsheet",
+      "description": "Use when tasks involve creating, editing, analyzing, or formatting spreadsheets (`.xlsx`, `.csv`, `.tsv`) with formula-aware workflows, cached recalculation, and visual review.",
+      "category": "docs",
+      "tags": [
+        "curated",
+        "openai",
+        "spreadsheet"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/spreadsheet",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "transcribe",
+      "description": "Transcribe audio files to text with optional diarization and known-speaker hints. Use when a user asks to transcribe speech from audio/video, extract text from recordings, or label speakers in interviews or meetings.",
+      "category": "ai",
+      "tags": [
+        "curated",
+        "openai",
+        "transcribe"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/transcribe",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "vercel-deploy",
+      "description": "Deploy applications and websites to Vercel. Use when the user requests deployment actions like \"deploy my app\", \"deploy and give me the link\", \"push this live\", or \"create a preview deployment\".",
+      "category": "docker",
+      "tags": [
+        "curated",
+        "deploy",
+        "openai",
+        "vercel"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/vercel-deploy",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "winui-app",
+      "description": "Bootstrap, develop, and design modern WinUI 3 desktop applications with C# and the Windows App SDK using official Microsoft guidance, WinUI Gallery patterns, Windows App SDK samples, and CommunityToolkit components. Use when creating a brand new app, preparing a machine for WinUI, reviewing, refactoring, planning, troubleshooting, environment-checking, or setting up WinUI 3 XAML, controls, navigation, windowing, theming, accessibility, responsiveness, performance, deployment, or related Windows app design and development work.",
+      "category": "dotnet",
+      "tags": [
+        "app",
+        "curated",
+        "openai",
+        "winui"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/winui-app",
+        "ref": "main"
+      }
+    },
+    {
+      "name": "yeet",
+      "description": "Use only when the user explicitly asks to stage, commit, push, and open a GitHub pull request in one flow using the GitHub CLI (`gh`).",
+      "category": "creative",
+      "tags": [
+        "curated",
+        "openai",
+        "yeet"
+      ],
+      "license": "MIT",
+      "source": {
+        "repo": "openai/skills",
+        "path": "skills/.curated/yeet",
+        "ref": "main"
+      }
+    }
   ]
 }

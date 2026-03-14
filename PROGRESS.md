@@ -73,10 +73,11 @@ Legend: ⬜ Not started · 🟡 In progress · ✅ Done · ❌ Blocked
 ## Phase 5: Registry Bootstrap
 
 - [x] `registry/embed.go` — `//go:embed skills.json`
-- [x] `registry/skills.json` — snapshot on 2026-03-14: 94 skills across 3 sources
+- [x] `registry/skills.json` — snapshot on 2026-03-14: 128 skills across 4 sources
   - 48 from `github/awesome-copilot`
   - 15 from `anthropics/skills`
   - 31 from `dotnet/skills` (MIT licensed)
+  - 34 from `openai/skills` (`skills/.curated`, MIT licensed)
 - [x] `.gitignore` — excludes binary and coverage files
 - [x] `README.md` — comprehensive docs
 - [x] `.github/copilot-instructions.md` — project conventions for Copilot
@@ -88,7 +89,7 @@ Legend: ⬜ Not started · 🟡 In progress · ✅ Done · ❌ Blocked
 - [ ] `cmd/sources.go` — sync registry from configured upstream sources
 - [ ] **Registry auto-refresh** — two options under consideration:
   - **Option A** *(simpler)*: fetch `registry/skills.json` from `https://raw.githubusercontent.com/darrenr/skills-cli/main/registry/skills.json` and save to `~/.skills-cli/registry.json`. Stale check (24h TTL) already exists in the loader; `Loader.Save()` already exists but is never called. Add a background refresh on any command + `skills-cli registry refresh` for manual force. Skills lag behind a repo commit but work offline with the embedded seed.
-  - **Option B** *(dynamic)*: query each source repo's API (`github/awesome-copilot`, `anthropics/skills`, `dotnet/skills`) directly and rebuild the registry. Always current with upstream. Needs rate-limit handling and is what `cmd/sources.go` was intended to be. Can be bolted on top of Option A later.
+  - **Option B** *(dynamic)*: query each source repo's API (`github/awesome-copilot`, `anthropics/skills`, `dotnet/skills`, `openai/skills`) directly and rebuild the registry. Always current with upstream. Needs rate-limit handling and is what `cmd/sources.go` was intended to be. Can be bolted on top of Option A later.
   - Recommended: ship Option A first; Option B as a follow-on.
 - [ ] `skills-cli catalog` — categorized summary (count of skills per category)
 - [ ] `skills-cli validate <path>` — validate a local SKILL.md against the spec
@@ -113,6 +114,7 @@ Legend: ⬜ Not started · 🟡 In progress · ✅ Done · ❌ Blocked
 | 2026-03-14 | No `internal/config/` package | Viper used directly in `cmd/`; no config logic complex enough to warrant its own package |
 | 2026-03-14 | `registry/skills.json` not `registry/sources.json` | Name reflects content (skills, not sources) |
 | 2026-03-14 | Added `dotnet/skills` as third registry source | 31 high-quality MIT-licensed .NET skills from the official Microsoft team |
+| 2026-03-14 | Added `openai/skills` as fourth registry source | 34 curated OpenAI skills from `skills/.curated` (name collisions skipped) |
 | 2026-03-14 | `cmd/sources.go` deferred to v2 | Single curated registry covers v1 needs; dynamic source management adds complexity |
 
 ## Notes
@@ -128,7 +130,7 @@ _Capture observations, issues, and ideas as we go._
 
 ### 2026-03-14 — v1 Build Complete
 - All v1-scoped phases implemented and tested on `develop` branch
-- Registry snapshot on 2026-03-14: 94 skills bundled from 3 sources (48 awesome-copilot, 15 anthropics/skills, 31 dotnet/skills)
+- Registry snapshot on 2026-03-14: 128 skills bundled from 4 sources (48 awesome-copilot, 15 anthropics/skills, 31 dotnet/skills, 34 openai/skills)
 - All `internal/` packages ≥85% statement coverage with race detector
 - Cross-compiled clean for darwin/linux/windows × amd64/arm64
 - End-to-end install→update→remove verified in /tmp test project
