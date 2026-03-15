@@ -48,7 +48,8 @@ func runInfo(cmd *cobra.Command, args []string) error {
 	skillMDPath := strings.TrimSuffix(entry.Source.Path, "/") + "/SKILL.md"
 	data, err := fetcher.FetchFile(context.Background(), entry.Source.Repo, entry.Source.Ref, skillMDPath)
 	if err != nil {
-		fmt.Fprintf(os.Stderr, "\nwarning: could not fetch SKILL.md: %v\n", err)
+		warnErr := fmt.Errorf("could not fetch SKILL.md: %w", err)
+		fmt.Fprintf(os.Stderr, "\nwarning: %v\n", warnErr)
 		return nil
 	}
 

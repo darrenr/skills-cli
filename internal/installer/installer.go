@@ -27,6 +27,21 @@ func Install(ctx context.Context, entry registry.SkillEntry, opts InstallOptions
 	destDir := filepath.Join(opts.TargetDir, entry.Name)
 
 	existing := manifest.Find(entry.Name)
+	if existing != nil {
+		if _, err := os.Stat(existing.InstallPath); err != nil {
+			if os.IsNotExist(err) {
+				// Self-heal stale manifest entries when users manually delete skill folders.
+				manifest.Remove(entry.Name)
+				if err := manifest.Save(); err != nil {
+					warnErr := fmt.Errorf("save manifest: %w", err)
+					fmt.Fprintf(os.Stderr, "warning: %v\n", warnErr)
+				}
+				existing = nil
+			} else {
+				return "", fmt.Errorf("check existing install path %s: %w", existing.InstallPath, err)
+			}
+		}
+	}
 	if existing != nil && !opts.Force {
 		return "", fmt.Errorf("skill %q is already installed at %s (use --force to overwrite)", entry.Name, existing.InstallPath)
 	}
@@ -48,7 +63,8 @@ func Install(ctx context.Context, entry registry.SkillEntry, opts InstallOptions
 	})
 	if err := manifest.Save(); err != nil {
 		// Non-fatal: files are written, just warn.
-		fmt.Fprintf(os.Stderr, "warning: save manifest: %v\n", err)
+		warnErr := fmt.Errorf("save manifest: %w", err)
+		fmt.Fprintf(os.Stderr, "warning: %v\n", warnErr)
 	}
 
 	return destDir, nil

@@ -160,6 +160,34 @@ func TestInstall_AlreadyInstalledWithoutForce(t *testing.T) {
 	assert.Contains(t, err.Error(), "already installed")
 }
 
+func TestInstall_StaleManifestEntry_AllowsInstall(t *testing.T) {
+	t.Parallel()
+	srv := newSkillServer(t)
+	defer srv.Close()
+
+	dir := t.TempDir()
+	m := tempManifest(t)
+
+	// Simulate a stale manifest entry after manual directory deletion.
+	stalePath := filepath.Join(dir, "test-skill")
+	m.Upsert(installedSkill("test-skill", stalePath))
+	require.NoError(t, m.Save())
+
+	before := m.Find("test-skill")
+	require.NotNil(t, before)
+	assert.Equal(t, stalePath, before.InstallPath)
+
+	path, err := installer.Install(context.Background(), testEntry(),
+		installer.InstallOptions{TargetDir: dir}, testFetcher(srv), m)
+	require.NoError(t, err)
+	assert.Equal(t, stalePath, path)
+	assert.FileExists(t, filepath.Join(path, "SKILL.md"))
+
+	after := m.Find("test-skill")
+	require.NotNil(t, after)
+	assert.Equal(t, stalePath, after.InstallPath)
+}
+
 func TestInstall_ForceOverwrites(t *testing.T) {
 	t.Parallel()
 	srv := newSkillServer(t)
