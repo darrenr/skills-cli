@@ -162,7 +162,7 @@ func (f *GitHubFetcher) listSkillFiles(ctx context.Context, repo, ref, skillPath
 }
 
 func (f *GitHubFetcher) walkContents(ctx context.Context, repo, ref, rootSkillPath, currentPath string, files *[]string) error {
-	repo = strings.TrimPrefix(repo, "github/")
+	repo = normalizeRepo(repo)
 	url := fmt.Sprintf("%s/repos/%s/contents/%s?ref=%s", strings.TrimSuffix(f.apiURL, "/"), repo, currentPath, ref)
 	req, err := http.NewRequestWithContext(ctx, http.MethodGet, url, nil)
 	if err != nil {
@@ -251,8 +251,21 @@ func (f *GitHubFetcher) rawURL(repo, ref, path string) string {
 	if base == "" {
 		base = rawBase
 	}
-	repo = strings.TrimPrefix(repo, "github/")
+	repo = normalizeRepo(repo)
 	return fmt.Sprintf("%s/%s/%s/%s", base, repo, ref, strings.TrimPrefix(path, "/"))
+}
+
+func normalizeRepo(repo string) string {
+	repo = strings.Trim(strings.TrimSpace(repo), "/")
+
+	// Accept provider-style values like "github/owner/repo".
+	parts := strings.Split(repo, "/")
+	if len(parts) == 3 && parts[0] == "github" {
+		return parts[1] + "/" + parts[2]
+	}
+
+	// Keep standard owner/repo values (including owner="github") unchanged.
+	return repo
 }
 
 // NotFoundError is returned when a file or skill does not exist in the repo.

@@ -95,6 +95,49 @@ func TestFetchFile_ContextCancelled(t *testing.T) {
 	require.Error(t, err)
 }
 
+func TestFetchFile_RepoOwnerGithub_IsNotStripped(t *testing.T) {
+	t.Parallel()
+	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		assert.Equal(t, "/github/awesome-copilot/main/skills/git-commit/SKILL.md", r.URL.Path)
+		w.WriteHeader(http.StatusOK)
+		_, _ = w.Write([]byte("ok"))
+	}))
+	defer srv.Close()
+
+	f := newTestFetcher(srv)
+	_, err := f.FetchFile(context.Background(), "github/awesome-copilot", "main", "skills/git-commit/SKILL.md")
+	require.NoError(t, err)
+}
+
+func TestDownloadSkill_ProviderStyleGithubRepo_IsNormalized(t *testing.T) {
+	t.Parallel()
+	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		switch r.URL.Path {
+		case "/repos/vuejs-ai/skills/contents/skills/vue-best-practices":
+			w.Header().Set("Content-Type", "application/json")
+			_ = json.NewEncoder(w).Encode([]map[string]string{{
+				"type": "file",
+				"path": "skills/vue-best-practices/SKILL.md",
+			}})
+			return
+		case "/vuejs-ai/skills/main/skills/vue-best-practices/SKILL.md":
+			w.WriteHeader(http.StatusOK)
+			_, _ = w.Write([]byte("---\nname: vue-best-practices\n---\n# Body"))
+			return
+		default:
+			w.WriteHeader(http.StatusNotFound)
+			return
+		}
+	}))
+	defer srv.Close()
+
+	dir := t.TempDir()
+	f := newTestFetcher(srv)
+	written, err := f.DownloadSkill(context.Background(), "github/vuejs-ai/skills", "main", "skills/vue-best-practices", dir, nil)
+	require.NoError(t, err)
+	require.Len(t, written, 1)
+}
+
 func TestDownloadSkill_WritesFiles(t *testing.T) {
 	t.Parallel()
 	srv := httptest.NewServer(http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {

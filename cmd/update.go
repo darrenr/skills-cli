@@ -4,8 +4,11 @@ import (
 	"context"
 	"fmt"
 	"os"
+	"sort"
+	"time"
 
 	"github.com/darrenr/skills-cli/internal/installer"
+	"github.com/darrenr/skills-cli/internal/skill"
 	"github.com/darrenr/skills-cli/internal/source"
 	"github.com/spf13/cobra"
 )
@@ -46,9 +49,30 @@ func runUpdate(cmd *cobra.Command, args []string) error {
 		return fmt.Errorf("load manifest: %w", err)
 	}
 
-	if len(manifest.Skills) == 0 {
-		fmt.Println("No skills are installed.")
-		return nil
+	scannedSkills, err := scanProjectInstalledSkills()
+	if err != nil {
+		return err
+	}
+
+	manifestChanged := false
+	for name, installPath := range scannedSkills {
+		existing, err := manifest.FindExistingInCurrentProject(name)
+		if err != nil {
+			return fmt.Errorf("resolve installed skill %q: %w", name, err)
+		}
+		if existing == nil || existing.InstallPath != installPath {
+			manifest.Upsert(skill.InstalledSkill{
+				Name:        name,
+				InstallPath: installPath,
+				InstalledAt: time.Now(),
+			})
+			manifestChanged = true
+		}
+	}
+	if manifestChanged {
+		if err := manifest.Save(); err != nil {
+			return fmt.Errorf("save manifest: %w", err)
+		}
 	}
 
 	token := os.Getenv("GITHUB_TOKEN")
@@ -56,9 +80,15 @@ func runUpdate(cmd *cobra.Command, args []string) error {
 
 	targets := args
 	if len(targets) == 0 {
-		for _, s := range manifest.Skills {
-			targets = append(targets, s.Name)
+		for name := range scannedSkills {
+			targets = append(targets, name)
 		}
+		sort.Strings(targets)
+	}
+
+	if len(targets) == 0 {
+		fmt.Println("No skills are installed.")
+		return nil
 	}
 
 	for _, name := range targets {

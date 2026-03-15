@@ -72,11 +72,11 @@ func runList(cmd *cobra.Command, args []string) error {
 			}
 		}
 
-		scannedNames, err := scanProjectInstalledSkillNames()
+		scannedSkills, err := scanProjectInstalledSkills()
 		if err != nil {
 			return err
 		}
-		for name := range scannedNames {
+		for name := range scannedSkills {
 			installedNames[name] = struct{}{}
 		}
 
@@ -100,8 +100,8 @@ func runList(cmd *cobra.Command, args []string) error {
 	return printSkillEntries(results, output)
 }
 
-func scanProjectInstalledSkillNames() (map[string]struct{}, error) {
-	names := make(map[string]struct{})
+func scanProjectInstalledSkills() (map[string]string, error) {
+	skills := make(map[string]string)
 	for _, base := range []string{skill.TargetProjectCopilot, skill.TargetProjectAgents, skill.TargetProjectClaude} {
 		dirs, err := os.ReadDir(base)
 		if os.IsNotExist(err) {
@@ -112,9 +112,9 @@ func scanProjectInstalledSkillNames() (map[string]struct{}, error) {
 		}
 		for _, d := range dirs {
 			if d.IsDir() {
-				names[d.Name()] = struct{}{}
+				skills[d.Name()] = filepath.Join(base, d.Name())
 			}
 		}
 	}
-	return names, nil
+	return skills, nil
 }
