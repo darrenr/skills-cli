@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"os"
 	"path/filepath"
+	"strings"
 	"time"
 
 	"github.com/darrenr/skills-cli/internal/skill"
@@ -95,4 +96,72 @@ func (m *Manifest) InstalledAt(name string) time.Time {
 		return s.InstalledAt
 	}
 	return time.Time{}
+}
+
+// FindExisting returns an installed skill only if its install path currently
+// exists. If the path is missing, the stale manifest entry is removed.
+func (m *Manifest) FindExisting(name string) (*skill.InstalledSkill, error) {
+	s := m.Find(name)
+	if s == nil {
+		return nil, nil
+	}
+
+	if _, err := os.Stat(s.InstallPath); err != nil {
+		if os.IsNotExist(err) {
+			m.Remove(name)
+			if err := m.Save(); err != nil {
+				return nil, fmt.Errorf("save manifest: %w", err)
+			}
+			return nil, nil
+		}
+		return nil, fmt.Errorf("check existing install path %s: %w", s.InstallPath, err)
+	}
+
+	return s, nil
+}
+
+// FindExistingInCurrentProject returns an installed skill only if it exists on
+// disk and is inside the current working directory.
+func (m *Manifest) FindExistingInCurrentProject(name string) (*skill.InstalledSkill, error) {
+	projectDir, err := os.Getwd()
+	if err != nil {
+		return nil, fmt.Errorf("get current directory: %w", err)
+	}
+
+	s, err := m.FindExisting(name)
+	if err != nil || s == nil {
+		return s, err
+	}
+
+	absInstallPath, err := filepath.Abs(s.InstallPath)
+	if err != nil {
+		return nil, fmt.Errorf("resolve install path %s: %w", s.InstallPath, err)
+	}
+	absProjectDir, err := filepath.Abs(projectDir)
+	if err != nil {
+		return nil, fmt.Errorf("resolve project path %s: %w", projectDir, err)
+	}
+	absInstallPath, err = filepath.EvalSymlinks(absInstallPath)
+	if err != nil {
+		return nil, fmt.Errorf("eval install path symlinks %s: %w", absInstallPath, err)
+	}
+	absProjectDir, err = filepath.EvalSymlinks(absProjectDir)
+	if err != nil {
+		return nil, fmt.Errorf("eval project path symlinks %s: %w", absProjectDir, err)
+	}
+
+	rel, err := filepath.Rel(absProjectDir, absInstallPath)
+	if err != nil {
+		return nil, fmt.Errorf("compute path relation %s to %s: %w", absProjectDir, absInstallPath, err)
+	}
+
+	if rel == "." {
+		return s, nil
+	}
+
+	if filepath.IsAbs(rel) || rel == ".." || strings.HasPrefix(rel, ".."+string(filepath.Separator)) {
+		return nil, nil
+	}
+
+	return s, nil
 }

@@ -18,7 +18,12 @@ var rootCmd = &cobra.Command{
 (SKILL.md files) from public GitHub repositories.
 
 Browse the registry, search by keyword, install skills into your project
-or globally, and keep them up to date — no authentication required.`,
+or globally, and keep them up to date — no authentication required.
+
+Common workflows:
+  skills-cli list
+  skills-cli list --installed
+  skills-cli search "commit messages"`,
 }
 
 // Execute is the entry point called from main.go.

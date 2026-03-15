@@ -339,6 +339,47 @@ func TestManifest_InstalledAt_NotFound(t *testing.T) {
 	assert.Equal(t, time.Time{}, m.InstalledAt("nonexistent"))
 }
 
+func TestManifest_FindExistingInCurrentProject_AllowsDotDotPrefixDirectoryName(t *testing.T) {
+	projectDir := t.TempDir()
+	origWD, err := os.Getwd()
+	require.NoError(t, err)
+	require.NoError(t, os.Chdir(projectDir))
+	t.Cleanup(func() {
+		_ = os.Chdir(origWD)
+	})
+
+	installPath := filepath.Join(projectDir, "..cache", "edge-skill")
+	require.NoError(t, os.MkdirAll(installPath, 0o755))
+
+	m := tempManifest(t)
+	m.Upsert(installedSkill("edge-skill", installPath))
+
+	found, err := m.FindExistingInCurrentProject("edge-skill")
+	require.NoError(t, err)
+	require.NotNil(t, found)
+	assert.Equal(t, installPath, found.InstallPath)
+}
+
+func TestManifest_FindExistingInCurrentProject_ExcludesOutsideProject(t *testing.T) {
+	projectDir := t.TempDir()
+	origWD, err := os.Getwd()
+	require.NoError(t, err)
+	require.NoError(t, os.Chdir(projectDir))
+	t.Cleanup(func() {
+		_ = os.Chdir(origWD)
+	})
+
+	outsidePath := filepath.Join(t.TempDir(), "outside-skill")
+	require.NoError(t, os.MkdirAll(outsidePath, 0o755))
+
+	m := tempManifest(t)
+	m.Upsert(installedSkill("outside-skill", outsidePath))
+
+	found, err := m.FindExistingInCurrentProject("outside-skill")
+	require.NoError(t, err)
+	assert.Nil(t, found)
+}
+
 func TestLoadManifest_InvalidJSON(t *testing.T) {
 	t.Parallel()
 	dir := t.TempDir()
